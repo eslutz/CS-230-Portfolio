@@ -39,6 +39,6 @@ public class Entity {
     @Override
     public String toString() {
 
-        return "Game [id=" + id + ", name=" + name + "]";
+        return "[id=" + id + ", name=" + name + "]";
     }
 }

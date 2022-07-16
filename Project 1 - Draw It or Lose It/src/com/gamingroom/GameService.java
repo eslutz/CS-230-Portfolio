@@ -6,8 +6,6 @@ import java.util.Objects;
 
 /**
  * A singleton service for the game engine
- * 
- * @author coce@snhu.edu
  */
 public class GameService {
 
@@ -20,6 +18,16 @@ public class GameService {
 	 * Holds the next game identifier
 	 */
 	private static long nextGameId = 1;
+
+	/**
+	 * Holds the next team identifier
+	 */
+	private static long nextTeamId = 1;
+
+	/**
+	 * Holds the next player identifier
+	 */
+	private static long nextPlayerId = 1;
 
 	/**
 	 * Holds the single gameService instance
@@ -50,7 +58,7 @@ public class GameService {
 	 *
 	 * @return the single gameService instance
 	 */
-	public static GameService getGameService() {
+	public static GameService getInstance() {
 		// if not found, make a new GameService instance
 		if (gameService == null) {
 			gameService = new GameService();
@@ -67,7 +75,6 @@ public class GameService {
 	 * @return the game instance (new or existing)
 	 */
 	public Game addGame(String name) {
-
 		// a local game instance
 		Game game = null;
 
@@ -94,18 +101,6 @@ public class GameService {
 		// return the new/existing game instance to the caller
 		return game;
 	}
-
-	/**
-	 * Returns the game instance at the specified index.
-	 * <p>
-	 * Scope is package/local for testing purposes.
-	 * </p>
-	 * @param index index position in the list to return
-	 * @return requested game instance
-	 */
-	Game getGame(int index) {
-		return games.get(index);
-	}
 	
 	/**
 	 * Returns the game instance with the specified id.
@@ -114,7 +109,6 @@ public class GameService {
 	 * @return requested game instance
 	 */
 	public Game getGame(long id) {
-
 		// a local game instance
 		Game game = null;
 
@@ -135,7 +129,6 @@ public class GameService {
 	 * @return requested game instance
 	 */
 	public Game getGame(String name) {
-
 		// a local game instance
 		Game game = null;
 
@@ -156,5 +149,23 @@ public class GameService {
 	 */
 	public int getGameCount() {
 		return games.size();
+	}
+
+	/**
+	 * Returns the next team id
+	 *
+	 * @return the next team id
+	 */
+	public long getNextTeamId() {
+		return nextTeamId++;
+	}
+
+	/**
+	 * Returns the next player id
+	 *
+	 * @return the next player id
+	 */
+	public long getNextPlayerId() {
+		return nextPlayerId++;
 	}
 }

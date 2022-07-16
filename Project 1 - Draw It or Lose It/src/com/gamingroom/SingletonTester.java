@@ -11,10 +11,10 @@ public class SingletonTester {
 		
 		System.out.println("\nAbout to test the singleton...");
 		
-		GameService service = GameService.getGameService();
+		GameService service = GameService.getInstance();
 		
 		// a simple for loop to print the games
-		for (int i = 0; i < service.getGameCount(); i++) {
+		for (int i = 1; i <= service.getGameCount(); i++) {
 			System.out.println(service.getGame(i));
 		}
 
