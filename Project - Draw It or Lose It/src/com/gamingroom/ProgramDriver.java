@@ -106,7 +106,7 @@ public class ProgramDriver {
 		System.out.println(team4 + " " + player16);
 
 		// reusing player names on different teams
-		System.out.println("\nReusing player names on same team");
+		System.out.println("\nReusing player names on different team");
 		Player player17 = team1.addPlayer("Player #3");
 		System.out.println(team1 + " " + player17);
 		Player player18 = team1.addPlayer("Player #4");
