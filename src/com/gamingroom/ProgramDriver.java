@@ -2,8 +2,9 @@ package com.gamingroom;
 
 /**
  * Application start-up program
- * 
- * @author coce@snhu.edu
+ *
+ * @author eric.slutz@snuh.edu
+ *
  */
 public class ProgramDriver {
 	

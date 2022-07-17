@@ -6,13 +6,16 @@ import java.util.Objects;
 
 /**
  * A singleton service for the game engine
+ *
+ * @author eric.slutz@snuh.edu
+ *
  */
 public class GameService {
 
 	/**
 	 * A list of the active games
 	 */
-	private static List<Game> games = new ArrayList<Game>();
+	private static final List<Game> games = new ArrayList<Game>();
 
 	/**
 	 * Holds the next game identifier

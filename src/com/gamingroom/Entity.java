@@ -2,6 +2,9 @@ package com.gamingroom;
 
 /**
  * A simple class with id and name for use in classes
+ *
+ * @author eric.slutz@snuh.edu
+ *
  */
 public class Entity {
     private long id;
@@ -23,6 +26,8 @@ public class Entity {
     }
 
     /**
+     * Returns the id
+     *
      * @return the id
      */
     public long getId() {
@@ -30,12 +35,19 @@ public class Entity {
     }
 
     /**
+     * Returns the name
+     *
      * @return the name
      */
     public String getName() {
         return name;
     }
 
+    /**
+     * Returns id and name in a formatted string
+     *
+     * @return string of id and name
+     */
     @Override
     public String toString() {
 

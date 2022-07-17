@@ -5,9 +5,12 @@ import java.util.List;
 
 /**
  * A simple class to hold information about a game
+ *
+ * @author eric.slutz@snuh.edu
+ *
  */
 public class Game extends Entity {
-	private static final List<Team> teams = new ArrayList<>();
+	private final List<Team> teams = new ArrayList<>();
 
 	/**
 	 * Constructor with an identifier and name
@@ -17,7 +20,10 @@ public class Game extends Entity {
 	}
 
 	/**
-	 * @return the team
+	 * Construct a new team instance
+	 *
+	 * @param name the unique name of the team
+	 * @return the team instance (new or existing)
 	 */
 	public Team addTeam(String name) {
 		// a local team instance
@@ -47,6 +53,11 @@ public class Game extends Entity {
 		return team;
 	}
 
+	/**
+	 * Returns game id and name in a formatted string
+	 *
+	 * @return string of id and name
+	 */
 	@Override
 	public String toString() {
 		
