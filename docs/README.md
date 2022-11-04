@@ -1,5 +1,5 @@
 # CS-230-Projects
-Projects from CS-230 Programming Languages.
+Project from CS-230 Programming Languages.
 
 ## [Project - Draw It or Lose It](https://github.com/eslutz/CS-230-Projects/tree/main/Project%20-%20Draw%20It%20or%20Lose%20It)
 
