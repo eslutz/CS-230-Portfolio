@@ -8,4 +8,4 @@ A backend prototype for storing unique instances for a guessing game written in 
 
 The app showcases the use of the singleton design pattern, the iterator pattern, and inheritance.
 
-[Software Design Document](The%20Gaming%20Room%20-%20Project%20Software%20Design%20Document.pdf)
+- [Software Design Document](The%20Gaming%20Room%20-%20Project%20Software%20Design%20Document.pdf)
