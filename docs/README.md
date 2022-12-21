@@ -1,4 +1,4 @@
-# CS-230-Projects
+# CS-230-Portfolio
 
 Projects from CS-230 Programming Languages.
 
